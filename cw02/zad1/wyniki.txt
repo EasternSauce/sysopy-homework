@@ -1,0 +1,32 @@
+Rozmiar rekordu: 4
+a) 2000 rekordów:
+sys: user: 0m1.127s system: 0m3.317s
+2000: user: 0m1.077s system: 0m3.373s
+b) 2500 rekordów:
+sys: user: 0m1.567s system: 0m5.073s
+lib: user: 0m1.633s system: 0m5.120s
+Rozmiar rekordu: 512
+a) 2000 rekordów:
+sys: user: 0m1.387s system: 0m4.147s
+lib: user: 0m1.220s system: 0m4.263s
+b) 2500 rekordów:
+sys: user: 0m1.353s system: 0m4.443s
+lib: user: 0m1.333s system: 0m4.267s
+Rozmiar rekordu: 4096
+a) 500 rekordów:
+sys: user: 0m0.150s system: 0m0.717s
+lib: user: 0m0.100s system: 0m0.823s
+b) 700 rekordów:
+sys: user: 0m0.233s system: 0m1.563s
+lib: user: 0m0.200s system: 0m1.627s
+Rozmiar rekordu: 8192
+a) 500 rekordów:
+sys: user: 0m0.147s system: 0m1.737s
+lib: user: 0m0.153s system: 0m1.570s
+b) 700 rekordów:
+sys: user: 0m0.167s system: 0m1.827s
+lib: user: 0m0.150s system: 0m1.933s
+
+Wnioski:
+rozmiar rekordu nie wpływa na czas sortowania
+funkcje biblioteczne wymagają z reguły więcej czasu na posortowanie

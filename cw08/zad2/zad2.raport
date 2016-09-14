@@ -1,0 +1,21 @@
+a) 
+   | SIGUSR1 | SIGTERM | SIGKILL | SIGSTOP |
+1  | ZABITY  |  ZABITY | ZABITY  |STOPOWANY|
+2  |   NIC   |   NIC   | ZABITY  |STOPOWANY|
+3  |  PRZECH |  PRZECH | ZABITY  |STOPOWANY|
+4  |   NIC   |   NIC   | ZABITY  |STOPOWANY|
+5  | ZABITY  | ZABITY  | ZABITY  |STOPOWANY|
+
+
+1- wysłanie sygnału do procesu, gdy żaden wątek nie ma zamaskowanego tego sygnału
+2-wysłanie sygnału do procesu, gdy główny wątek programu ma zamaskowany ten sygnał, a wszystkie pozostałe wątki nie,
+3- wysłanie sygnału do procesu, gdy wszystkie wątki mają zainstalowaną niestandardową procedurę obsługi przerwania, która wypisuje informację o nadejściu tego sygnału oraz PID i TID danego wątku
+4- wysłanie sygnału do wątku z zamaskowanym tym sygnałem
+5- wysłanie sygnału do wątku, w którym zmieniona jest procedura obsługi sygnału, jak przedstawiono w punkcie 3
+
+b)
+Dzielenie przez zero - proces został zabity:
+Job 1, “./b” terminated by signal SIGFPE (Floating point exception)
+
+Linux arch-kamil 4.5.1-1-ARCH #1 SMP PREEMPT Thu Apr 14 19:19:32 CEST 2016 x86_64 GNU/Linux
+Laptop Toshiba Satelite L750
